@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 0;
+    margin-left: 0;
+
+}
+
+header { /*header style*/
+    display: flex;
+    justify-content: center;
+    background-color: #2D5128; 
+}
+
+.header-content { /*header style*/
+    width: 1237px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.header-image { /* Header style */
+    width:100%;
+    height:100%;
+    object-fit: cover; 
+}
+
+.nav-bar { /*header style*/
+    background-color: #2D5128; 
+    padding: 10px 0;
+}
+
+.nav-content { /*header style*/
+    display: flex;
+    justify-content: center;
+    max-width: 1237px;
+    margin: 0 auto;
+}
+
+.nav-content a { /*header style*/
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.special {
+    background-color: #d7e3fc;
+    margin-bottom: 0;
+    padding : 20px 0;
+}
+#about-she{
+    margin-bottom: 0;
+
+}
+#why-choose-us{
+    margin-top: 0;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    font-family: 'Copperplate', fantasy;
+    
+}
+
+.welcome-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6; /* Adjust this value to set the transparency level */
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2D5128;
+    font-size: 100px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul {
+
+    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+.center-logo {
+    text-align: center;
+}
+
+.center-logo img {
+    display: inline-block;
+}
+
+.expert {
+    text-align: center;
+}
+
+.expert img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.expert h3 {
+    margin-bottom: 5px;
+}
+
+.expert p {
+    line-height: 1.6;
+}
+
+
+.footer-container {  /*footer style*/
+            background-color: #2d5128;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-content { /*footer style*/
+            display: flex;
+            align-items: center;
+        }
+        .footer-logo { /*footer style*/
+            margin-right: 20px;
+        }
+        .footer-logo img { /*footer style*/
+            width: 200px;
+            height: auto;
+        }
+        .footer-menu ul { /*footer style*/
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-menu li { /*footer style*/
+            display:list-item;
+            margin-right: 20px;
+            padding: 5% 0; 
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .footer-menu a { /*footer style*/
+            text-decoration: none;
+            color: rgb(245, 244, 244);
+            font-weight:lighter;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .footer-details { /*footer style*/
+            text-align: left;
+        }
+        .footer-details p { /*footer style*/
+            margin: 5px 0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .footer-details a { /*footer style*/
+            color: white;
+            text-decoration: none;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .footer-details a:hover { /*footer style*/
+            text-decoration: underline;
+        }
+
+</style>
+
+<!--end of style-->
+
+<header>
+    <div class="header-content">
+        <img src="SHE HEADER.png" alt="Header Image" class="header-image">
+    </div>
+</header>
+
+<nav class="nav-bar">
+    <div class="nav-content">
+        <a href="guestHomePage.html">HOME</a>
+        <a href="membership.html">BECOME A MEMBER</a>
+        <a href="guestAbout.html">ABOUT US</a>
+        <a href="guestPackages.php">WHAT WE OFFER</a>
+        <a href="guestFaqs.html">FAQS</a>
+        <a href="guestContact.html" >CONTACT</a>
+        <a href="guestDonate.html">DONATE</a>
+        <a href="guestReviews.html">REVIEWS</a>
+        <a href="guestEducation.html">EDUCATION</a>
+        <a href="login.php">LOGIN</a>
+    </div>
+</nav>
+
+<!--main content-->
+<body>
+    <main>
+        <section id="about-she" class="container">
+            <div class="image-container">
+                <img src="yoga_header.jpeg" alt="Welcome" class="welcome-image">
+                <div class="image-text">ABOUT US</div>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <h2>Welcome To SHE!</h2>
+                        <p style="text-align: center;">The all-inclusive wellness website built specifically for women. 
+                            <br>At SHE Healthcare, we believe in empowering women to lead healthier,<br> happier lives through a holistic approach to wellness.</p>
+                        
+                            <div style="text-align: center;">
+                                <img src="motivation.jpeg" alt="MOTIVATION" style="width: 250px; height: 200px;">
+                            </div>
+
+                            <h2><br>Mission</h2>
+                             <ul>
+                                <li>To create a nurturing environment where women can achieve their health and wellness goals.</li>
+                                <li>We are committed to providing high-quality services that promote physical fitness, nutritional well-being, and mental health.</li>
+                                <li>Here, we celebrate the strength, resilience, and beauty of women.</li>
+                            </ul>
+                    </td>
+                    <td class="special">
+                        <h2>What is "SHE"?</h2>
+                        <div class="center-logo">
+                            <img src="sheLogo.jpeg" alt="SHE Logo" style="width: 250px; height: 200px;">
+                        </div>
+                        <p style="text-align: center;"><strong>Strength:</strong> <br>We believe in building both physical and mental strength. <br> We can help women develop resilience, confidence, and a strong body.</p>
+                        <p style="text-align: center;"><strong>Health:</strong> <br> We prioritize your overall well-being.<br> From fitness classes to nutrition guidance, <br>we focus on every aspect of health to ensure you feel your best.</p>
+                        <p style="text-align: center;"><strong>Empowerment:</strong> <br> Our community is dedicated to empowering women. <br>We provide the tools, support, and encouragement needed to help you take control of your health and life.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        
+        <section id="why-choose-us" class="container special">
+            <h2>Why you need to choose SHE?</h2>
+            <p style="text-align: center;"><strong>Holistic Approach:</strong> We address the complete spectrum of women’s health, considering physical, emotional, and mental well-being.</p>
+            <p style="text-align: center;"><strong>Expert Guidance:</strong> Our team consists of certified professionals dedicated to providing exceptional care and support.</p>
+            <p style="text-align: center;"><strong>Community Support:</strong> Become part of a vibrant community of women who motivate and inspire each other.</p>
+            <p style="text-align: center;"><strong>Flexible Scheduling:</strong> We offer a variety of class times and consultation options to fit your busy lifestyle.</p>
+            <p style="text-align: center;"><strong>Personalized Services:</strong> Tailor your wellness journey with customized plans that meet your individual needs.</p>
+        </section>
+        
+        <section id="our-experts" class="container">
+            <h2>Our Experts</h2>
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="expert">
+                                <img src="nutrition.jpeg" alt="Expert 1">
+                                <h3>Liyla Rose - Nutritionist</h3>
+                                <p>Dr. Rose is an <br>Accredited Dietitian of Malaysia, <br> specialising in general nutrition, <br> weight management, preventive nutrition, <br> diabetes, heart disease,  hypertension, gastrointestinal <br> disorders and sports nutrition.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="expert">
+                                <img src="pilates.jpeg" alt="Expert 2">
+                                <h3>Sophia Lim - Pilates Instructor</h3>
+                                <p>Sophia specializes in Pilates <br> and has helped numerous women improve <br> their physical strength and flexibility.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="expert">
+                                <img src="yoga.jpeg" alt="Expert 3">
+                                <h3>Anne Johnson - Yoga Instructor</h3>
+                                <p>Anne is a dedicated yoga instructor <br> with a passion for helping women find balance <br>  and peace through yoga.<br> Anne specializes in various yoga style : <br> Hatha, Vinyasa and Yin </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="expert">
+                                <img src="consult.jpeg" alt="Expert 4">
+                                <h3>Karina Yu - Health Consultant</h3>
+                                <p>Karina provides expert health consultations <br> with her 18 years of experience <br> will help women achieve their wellness goals <br> through personalized plans.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>  
+
+<!--end of main content-->
+
+<footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-menu">
+                <ul>
+                        <li><strong><u>Menu</u></strong></li>
+                        <li><a href="guestHomePage.html">Home</a></li>
+                        <li><a href="guestAbout.html">About Us</a></li>
+                        <li><a href="guestPackages.php">Packages</a></li>
+                        <li><a href="guestContact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo">
+                    <img src="footerLogo.png" alt="Logo">
+                </div>
+                <div class="footer-details">
+                    <p><strong><u>Get In Touch</u></strong></p>
+                    <p>Level 2, The Five @KPD</p>
+                    <p>JALAN DUNGUN</p>
+                    <p>DAMANSARA HEIGHTS</p>
+                    <p><a href="mailto:INFO@shewellnessclub">INFO@shewellnessclub</a></p>
+                    <p><a href="tel:+0123456789">+0123456789</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
