@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member FAQs - SHE Wellness Club</title>
+    <link rel="stylesheet" href="member faqs.css">
+</head>
+
+<header>
+    <div class="header-content">
+        <img src="SHE HEADER.png" alt="Header Image" class="header-image">
+    </div>
+</header>
+
+
+<nav class="nav-bar">
+    <div class="nav-content">
+        <a href="guestHomePage.html">HOME</a>
+        <a href="membership.html">BECOME A MEMBER</a>
+        <a href="guestAbout.html">ABOUT US</a>
+        <a href="guestPackages.php">WHAT WE OFFER</a>
+        <a href="guestFaqs.html">FAQS</a>
+        <a href="guestContact.html" >CONTACT</a>
+        <a href="guestDonate.html">DONATE</a>
+        <a href="guestReviews.html">REVIEWS</a>
+        <a href="guestEducation.html">EDUCATION</a>
+        <a href="login.php">LOGIN</a>
+    </div>
+</nav>
+
+        <body>
+            <div class="container">
+                <main>
+                    <section class="faq-section">
+                        <h1>Member FAQs</h1>
+        
+                        <div class="faq-category">
+                            <h2>Membership</h2>
+                            <div class="faq-item">
+                                <button class="faq-question">What exclusive benefits do members receive?</button>
+                                <div class="faq-answer">
+                                    <p>As a SHE Wellness Club member, you gain exclusive access to private training sessions, allied health services, fitness classes, meditation sessions, personalized coaching, and a supportive community. Members also enjoy perks such as on-site culinary experts and co-working spaces.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">Can I invite guests to the club?</button>
+                                <div class="faq-answer">
+                                    <p>Yes, members can bring a guest for a limited time. You can bring along your sister, mother, or best friend for a nutritious meal, a mindfulness group class, or a Pilates group class. Drop-in rates apply.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">Are children allowed at the club?</button>
+                                <div class="faq-answer">
+                                    <p>Children are welcome at SHE Wellness Club, as long as they can occupy themselves. We aim to ensure a pleasant and focused environment for all our members. Feel free to ask about any designated areas or activities suitable for your child during your visit.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">How do I renew my membership?</button>
+                                <div class="faq-answer">
+                                    <p>Membership renewal details can be found in your member portal. If you need assistance, our front desk staff will be happy to help during your visit.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="faq-category">
+                            <h2>Wellness Services</h2>
+                            <div class="faq-item">
+                                <button class="faq-question">What time are the wellness services available?</button>
+                                <div class="faq-answer">
+                                    <p>Our wellness services are available from 9am to 5pm. Please book in advance to secure your preferred time slots.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">How many wellness services can I book online?</button>
+                                <div class="faq-answer">
+                                    <p>Members can conveniently book up to 5 wellness services in advance through our online booking system, which is also accessible via our mobile app.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="faq-category">
+                            <h2>Contact and Support</h2>
+                            <div class="faq-item">
+                                <button class="faq-question">How can I contact SHE Wellness Club?</button>
+                                <div class="faq-answer">
+                                    <p>For general inquiries, please visit our Contact page. You can also call us at +60 9876 5432. Our staff will be happy to assist you during our operating hours (9am - 5pm).</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What if I have a specific question not addressed here?</button>
+                                <div class="faq-answer">
+                                    <p>If you have a specific question that isn't addressed here, feel free to contact us via email or visit our front desk during operating hours. We are here to help!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const questions = document.querySelectorAll('.faq-question');
+                    questions.forEach(question => {
+                        question.addEventListener('click', function() {
+                            const answer = this.nextElementSibling;
+                            if (answer.classList.contains('active')) {
+                                answer.classList.remove('active');
+                            } else {
+                                document.querySelectorAll('.faq-answer.active').forEach(activeAnswer => {
+                                    activeAnswer.classList.remove('active');
+                                });
+                                answer.classList.add('active');
+                            }
+                        });
+                    });
+                });
+            </script>
+        </body>
+                
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><strong><u>Menu</u></strong></li>
+                            <li><a href="guestHomePage.html">Home</a></li>
+                            <li><a href="guestAbout.html">About Us</a></li>
+                            <li><a href="guestPackages.php">Packages</a></li>
+                            <li><a href="guestContact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="footerLogo.png" alt="Logo">
+                    </div>
+                    <div class="footer-details">
+                        <p><strong><u>Get In Touch</u></strong></p>
+                        <p>Level 2, The Five @KPD</p>
+                        <p>JALAN DUNGUN</p>
+                        <p>DAMANSARA HEIGHTS</p>
+                        <p><a href="mailto:INFO@shewellnessclub">INFO@shewellnessclub</a></p>
+                        <p><a href="tel:+0123456789">+0123456789</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+ 
+</html>
