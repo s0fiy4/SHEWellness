@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHE</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Additional CSS styles -->
+    <style>
+         
+       /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #2D5128; 
+}
+
+.header-content {
+    width: 1237px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.header-image {
+    width:100%;
+    height:100%;
+    object-fit: cover; 
+}
+
+.nav-bar {
+    background-color: #2D5128; 
+    padding: 10px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1237px;
+    margin: 0 auto;
+}
+
+.nav-content a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.header-image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #a25e3c; 
+    height:250px;
+    width:1279px;
+}
+
+/* Main content */
+.quote-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quote-container h1 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Class containers */
+.w3-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #d7e3fc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.w3-container img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.w3-container h2 {
+    font-family: 'Verdana', sans-serif;
+    
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.w3-container .text {
+    font-size: 16px;
+    max-width: 60%;
+    font-family: 'Georgia', serif;
+    text-align: justify;
+    flex: 1;
+}
+
+.w3-container .get-in-touch {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #438d49;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.w3-container .get-in-touch:hover {
+    background-color: #2d5128;
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #2d5128;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(250, 234, 234, 0.014);
+    color: #438d49;
+    padding: 10px 20px;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Copperplate', fantasy;
+}
+
+.overlay-text p {
+    color: rgb(5, 5, 5);
+    font-size: 25px;
+    font-family: 'Georgia', serif;
+}
+
+/* Footer */
+
+.footer-container {
+            background-color: #2d5128;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+        }
+        .footer-logo {
+            margin-right: 20px;
+        }
+        .footer-logo img {
+            width: 200px;
+            height: auto;
+        }
+        .footer-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-menu li {
+            display:list-item;
+            margin-right: 20px;
+            padding: 5% 0; 
+        }
+
+        .footer-menu a {
+            text-decoration: none;
+            color: rgb(245, 244, 244);
+            font-weight:lighter;
+        }
+
+        .footer-details {
+            text-align: left;
+        }
+        .footer-details p {
+            margin: 5px 0;
+        }
+        .footer-details a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <div class="header-content">
+            <img src="SHE HEADER.png" alt="Header Image" class="header-image">
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="guestHomePage.html">HOME</a>
+            <a href="membership.html">BECOME A MEMBER</a>
+            <a href="guestAbout.html">ABOUT US</a>
+            <a href="guestPackages.php">WHAT WE OFFER</a>
+            <a href="guestFaqs.html">FAQS</a>
+            <a href="guestContact.html" >CONTACT</a>
+            <a href="guestDonate.html">DONATE</a>
+            <a href="guestReviews.html">REVIEWS</a>
+            <a href="guestEducation.html">EDUCATION</a>
+            <a href="login.php">LOGIN</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="image-container">
+            <img src="head_wellness.png" alt="packages">
+            <div class="overlay-text">
+                <span>PACKAGES</span>
+                <p>Discover wellness with us!</p>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="quote-container">
+            <h1>"Better start now, than never"</h1>
+        </div>
+    </div>
+
+        <?php
+// Database connection parameters
+$servername = "localhost";
+$db_username = "root";
+$password = "";
+$dbname = "wellness";
+
+// Create connection
+$conn = new mysqli($servername, $db_username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// SQL query to fetch class details from class_details table
+$sql = "SELECT c.class_id, c.class_name, cd.description, cd.image_url
+        FROM classes c
+        INNER JOIN class_details cd ON c.class_id = cd.class_id";
+$result = $conn->query($sql);
+
+// Check if there are rows in the result set
+if ($result->num_rows > 0) {
+    // Output data of each row
+    while ($row = $result->fetch_assoc()) {
+        // Determine class-specific container based on class_id
+        switch ($row['class_id']) {
+            case 1:
+                $class_container_class = 'pilates-class-container';
+                $image_url = 'pilates1.png'; 
+                $class_nav_link = 'pilatesClass.html'; // Adjust as needed
+                break;
+            case 2:
+                $class_container_class = 'yoga-class-container';
+                $image_url = 'yoga1.png'; 
+                $class_nav_link = 'yogaClass.html'; // Adjust as needed
+                break;
+            case 3:
+                $class_container_class = 'brisk-walk-container';
+                $image_url = 'walk2.png'; 
+                $class_nav_link = 'briskWalkClass.html'; // Adjust as needed
+                break;
+            case 4:
+                $class_container_class = 'eat-healthy-container';
+                $image_url = 'eathealthy1.png'; 
+                $class_nav_link = 'eatHealthySession.html'; // Adjust as needed
+                break;
+            case 5:
+                $class_container_class = 'mental-health-container';
+                $image_url = 'mental2.png'; 
+                $class_nav_link = 'mentalHealthConsult.html'; // Adjust as needed
+                break;
+            default:
+                $class_container_class = '';
+                $class_nav_link = '#'; // Default link if no specific link is set
+                break;
+        }
+
+        echo '<div class="w3-container ' . $class_container_class . '">';
+        echo '<div class="image">';
+        echo '<img src="' . $image_url . '" alt="' . $row['class_name'] . '">';
+        echo '</div>';
+        echo '<div class="text">';
+        echo '<h2>' . $row['class_name'] . '</h2>';
+        echo '<p>' . $row['description'] . '</p>';
+        echo '<a href="' . $class_nav_link . '" class="get-in-touch">Book Now</a>'; // Replace with appropriate booking link
+        echo '</div>';
+        echo '</div>';
+    }
+} else {
+    echo "No classes found.";
+}
+
+// Close connection
+$conn->close();
+?>
+
+
+
+    </main>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-menu">
+                <ul>
+                        <li><strong><u>Menu</u></strong></li>
+                        <li><a href="guestHomePage.html">Home</a></li>
+                        <li><a href="guestAbout.html">About Us</a></li>
+                        <li><a href="guestPackages.php">Packages</a></li>
+                        <li><a href="guestContact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo">
+                    <img src="footerLogo.png" alt="Logo">
+                </div>
+                <div class="footer-details">
+                    <p><strong><u>Get In Touch</u></strong></p>
+                    <p>Level 2, The Five @KPD</p>
+                    <p>JALAN DUNGUN</p>
+                    <p>DAMANSARA HEIGHTS</p>
+                    <p><a href="mailto:INFO@shewellnessclub">INFO@shewellnessclub</a></p>
+                    <p><a href="tel:+0123456789">+0123456789</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
