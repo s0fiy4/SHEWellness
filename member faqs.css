@@ -1,0 +1,193 @@
+/* Add this to your CSS file */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.faq-section {
+    text-align: center;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.faq-category {
+    margin-bottom: 20px;
+}
+
+.faq-category h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.faq-question:focus {
+    outline: none;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #2D5128; 
+}
+
+.header-content {
+    width: 1237px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.header-image {
+    width:100%;
+    height:100%;
+    object-fit: cover; 
+}
+
+.nav-bar {
+    background-color: #2D5128; 
+    padding: 10px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1237px;
+    margin: 0 auto;
+}
+
+.nav-content a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.header-image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #a25e3c; 
+    height:250px;
+    width:1279px;
+}
+
+.footer-container {  /*footer style*/
+    background-color: #2d5128;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content { /*footer style*/
+    display: flex;
+    align-items: center;
+}
+.footer-logo { /*footer style*/
+    margin-right: 20px;
+}
+.footer-logo img { /*footer style*/
+    width: 200px;
+    height: auto;
+}
+.footer-menu ul { /*footer style*/
+    list-style-type: none;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.footer-menu li { /*footer style*/
+    display:list-item;
+    margin-right: 20px;
+    padding: 5% 0; 
+}
+
+.footer-menu a { /*footer style*/
+    text-decoration: none;
+    color: rgb(245, 244, 244);
+    font-weight:lighter;
+}
+
+.footer-details { /*footer style*/
+    text-align: left;
+}
+.footer-details p { /*footer style*/
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+}
+.footer-details a { /*footer style*/
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.footer-details a:hover { /*footer style*/
+    text-decoration: underline;
+}
+.nav-cart {
+background-color:#2d5128 ;
+color: white;
+padding: 10px;
+text-align: right;
+position: right;
+}
+.nav-cart a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
