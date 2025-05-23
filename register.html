@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form - SHE Wellness Club</title>
+ 
+  <style>
+    /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+
+  header {
+    display: flex;
+    justify-content: center;
+    background-color: #2D5128; 
+}
+
+.header-content {
+    width: 1237px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.header-image {
+    width:100%;
+    height:100%;
+    object-fit: cover; 
+}
+
+.nav-bar {
+    background-color: #2D5128; 
+    padding: 10px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1237px;
+    margin: 0 auto;
+}
+
+.nav-content a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.header-image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #a25e3c; 
+    height:250px;
+    width:1279px;
+}
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #d7e3fc; /* Background color for the container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .input-box {
+    margin-bottom: 15px;
+  }
+  
+  .input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-box input, .input-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .input-box input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .column {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
+  
+  
+  input[type="date"] {
+    padding: 10px;
+  }
+  
+  input[type="checkbox"] + label {
+    font-size: 0.9em;
+  }
+  
+  input[type="checkbox"] + label a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  input[type="checkbox"]:checked + label {
+    color: black;
+  }
+  
+    /* Styling for the modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .footer-container {
+            background-color: #2d5128;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+        }
+        .footer-logo {
+            margin-right: 20px;
+        }
+        .footer-logo img {
+            width: 200px;
+            height: auto;
+        }
+        .footer-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-menu li {
+            display:list-item;
+            margin-right: 20px;
+            padding: 5% 0; 
+        }
+
+        .footer-menu a {
+            text-decoration: none;
+            color: rgb(245, 244, 244);
+            font-weight:lighter;
+        }
+
+        .footer-details {
+            text-align: left;
+        }
+        .footer-details p {
+            margin: 5px 0;
+        }
+        .footer-details a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-details a:hover {
+            text-decoration: underline;
+        }  
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+        <img src="SHE HEADER.png" alt="Header Image" class="header-image">
+    </div>
+ </header>
+
+ <nav class="nav-bar">
+  <div class="nav-content">
+      <a href="guestHomePage.html">HOME</a>
+      <a href="membership.html">BECOME A MEMBER</a>
+      <a href="guestAbout.html">ABOUT US</a>
+      <a href="guestPackages.php">WHAT WE OFFER</a>
+      <a href="guestFaqs.html">FAQS</a>
+      <a href="guestContact.html" class="active">CONTACT</a>
+      <a href="guestDonate.html">DONATE</a>
+      <a href="guestReviews.html">REVIEWS</a>
+      <a href="guestEducation.html">EDUCATION</a>
+      <a href="login.php">LOGIN</a>
+  </div>
+</nav>
+
+
+
+  <section class="container">
+    <h1 style="text-align: center;">SHE Wellness Club</h1>
+    <h2 style="text-align: center;">Register to Become Our Member</h2>
+    <form id="registrationForm" class="form" action="registerprocess.php" method="POST">
+      <div class="input-box">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
+      </div>
+      <div class="input-box">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+      </div>
+      <div class="input-box tooltip">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required 
+               title="Password must be at least 8 characters long, include uppercase and lowercase letters, a number, and a special character.">
+      </div>
+      <div class="input-box tooltip">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required title="Password must be at least 8 characters long, include uppercase and lowercase letters, a number, and a special character.">
+      </div>
+      
+      <div class="column">
+        <div class="input-box">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" required>
+        </div>
+        <div class="input-box">
+          <label for="birthDate">Date of Birth</label>
+          <input type="date" id="birthDate" name="birthDate" placeholder="Enter birth date" required>
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="emergencyContact">Emergency Contact</label>
+        <input type="tel" id="emergencyContact" name="emergencyContact" placeholder="Enter emergency contact number" required>
+      </div>
+      <div class="input-box address">
+        <label for="address1">Address</label>
+        <input type="text" id="address1" name="address1" placeholder="Enter street address" required>
+        <input type="text" id="address2" name="address2" placeholder="Enter street address line 2">
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <input type="text" id="city" name="city" placeholder="Enter your city" required>
+        </div>
+        <div class="input-box">
+          <input type="text" id="postalCode" name="postalCode" placeholder="Enter postal code" required>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="select-box">
+          <label for="region">Region</label>
+          <select id="region" name="region" required>
+            <option value="" hidden>Region</option>
+            <option>Johor</option>
+            <option>Kedah</option>
+            <option>Kelantan</option>
+            <option>Melaka</option>
+            <option>Negeri Sembilan</option>
+            <option>Pahang</option>
+            <option>Pulau Pinang</option>
+            <option>Perak</option>
+            <option>Perlis</option>
+            <option>Sabah</option>
+            <option>Sarawak</option>
+            <option>Selangor</option>
+            <option>Terengganu</option>
+            <option>Kuala Lumpur</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" placeholder="Enter your country" required>
+        </div>
+      </div>
+      
+      <div class="input-box">
+        <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
+        <label for="termsCheckbox">I agree to the <a href="#" id="termsLink">terms and conditions</a></label>
+      </div>
+      <button type="submit">Register</button>
+      <p style="text-align: center;"><a href="membership.html">Go back</a></p>
+    </form>
+  </section>
+
+
+  <!-- Modal for Terms and Conditions -->
+  <div id="modalTerms" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Terms and Conditions - SHE Wellness Club</h2>
+      <p>Last updated : 16/6/2024</p>
+      <br>
+      <ol>
+        <li><strong>Membership Eligibility:</strong> Membership at The Wellness Club is open to individuals aged 18 years and above.</li>
+        <li><strong>Registration Information:</strong> All information provided during registration must be accurate and complete. Any changes to personal information should be promptly updated.</li>
+        <li><strong>Membership Fees:</strong> Membership fees are non-refundable. By completing the registration, you agree to pay the applicable fees for your selected membership plan.</li>
+        <li><strong>Code of Conduct:</strong> Members are expected to conduct themselves in a respectful manner towards staff and fellow members. Any behavior deemed inappropriate or disruptive may result in suspension or termination of membership.</li>
+        <li><strong>Use of Facilities:</strong> Access to club facilities is subject to availability and the terms outlined in your membership plan. Members are responsible for using the facilities in a safe and responsible manner.</li>
+        <li><strong>Personal Belongings:</strong> The Wellness Club is not liable for any loss or damage to personal belongings brought onto the premises.</li>
+        <li><strong>Health and Safety:</strong> Members are responsible for ensuring their own health and safety while using club facilities. Consultation with a healthcare professional is recommended before starting any new fitness program.</li>
+        <li><strong>Privacy Policy:</strong> The Wellness Club respects your privacy and handles personal information in accordance with applicable data protection laws. By registering, you consent to the collection and use of your personal information as described in our Privacy Policy.</li>
+        <li><strong>Termination:</strong> The Wellness Club reserves the right to terminate or suspend membership at its discretion, without refund, for violation of these terms and conditions or any other misconduct.</li>
+                <li><strong>Privacy Policy:</strong> The Wellness Club respects your privacy and handles personal information in accordance with applicable data protection laws. By registering, you consent to the collection and use of your personal information as described in our Privacy Policy.</li>
+        <li><strong>Termination:</strong> The Wellness Club reserves the right to terminate or suspend membership at its discretion, without refund, for violation of these terms and conditions or any other misconduct.</li>
+      </ol>
+      <p>By clicking the <strong>"I agree"</strong> button, you acknowledge that you have read, understood, and agree to abide by these terms and conditions.</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('registrationForm');
+      const termsLink = document.getElementById('termsLink');
+      const modalTerms = document.getElementById('modalTerms');
+      const modalClose = document.querySelector('.close');
+
+      // Show modal when terms link is clicked
+      termsLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        modalTerms.style.display = 'block';
+      });
+
+      // Close modal when close button is clicked
+      modalClose.addEventListener('click', () => {
+        modalTerms.style.display = 'none';
+      });
+
+      // Close modal when user clicks outside of it
+      window.addEventListener('click', (event) => {
+        if (event.target === modalTerms) {
+          modalTerms.style.display = 'none';
+        }
+      });
+
+      // Form submission handling
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const fullName = form.elements.fullName.value.trim();
+        const username = form.elements.username.value.trim();
+        const password = form.elements.password.value.trim();
+        const confirmPassword = form.elements.confirmPassword.value.trim();
+        const phoneNumber = form.elements.phoneNumber.value.trim();
+        const birthDate = form.elements.birthDate.value;
+        const emergencyContact = form.elements.emergencyContact.value.trim();
+        const address1 = form.elements.address1.value.trim();
+        const address2 = form.elements.address2.value.trim();
+        const city = form.elements.city.value.trim();
+        const postalCode = form.elements.postalCode.value.trim();
+        const region = form.elements.region.value.trim();
+        const country = form.elements.country.value.trim();
+        const termsCheckbox = form.elements.termsCheckbox.checked;
+
+        // Client-side validation
+        if (fullName && username && password && confirmPassword && phoneNumber && birthDate && emergencyContact && address1 && city && postalCode && region && country && termsCheckbox) {
+          if (password !== confirmPassword) {
+            alert('Passwords do not match. Please enter matching passwords.');
+          } else {
+            // Form is valid, submit to the server
+            form.submit();
+          }
+        } else {
+          alert('Please fill out all required fields.');
+        }
+      });
+    });
+  </script>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-menu">
+              <ul>
+                <li><strong><u>Menu</u></strong></li>
+                <li><a href="guestHomePage.php">Home</a></li>
+                <li><a href="guestAbout.html">About Us</a></li>
+                <li><a href="guestPackages.php">Packages</a></li>
+                <li><a href="guestContact.html">Contact Us</a></li>
+            </ul>
+            </div>
+            </div>
+            <div class="footer-logo">
+                <img src="footerLogo.png" alt="Logo">
+            </div>
+            <div class="footer-details">
+                <p><strong><u>Get In Touch</u></strong></p>
+                <p>Level 2, The Five @KPD</p>
+                <p>JALAN DUNGUN</p>
+                <p>DAMANSARA HEIGHTS</p>
+                <p><a href="mailto:INFO@shewellnessclub">INFO@shewellnessclub</a></p>
+                <p><a href="tel:+0123456789">+0123456789</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
