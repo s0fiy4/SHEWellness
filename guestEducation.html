@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+    body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #2D5128; 
+}
+
+.header-content {
+    width: 1237px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.header-image {
+    width:100%;
+    height:100%;
+    object-fit: cover; 
+}
+
+.nav-bar {
+    background-color: #2D5128; 
+    padding: 10px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1237px;
+    margin: 0 auto;
+}
+
+.nav-content a {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.header-image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #a25e3c; 
+    height:250px;
+    width:1279px;
+}
+  
+
+.footer-container {
+            background-color: #2d5128;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+        }
+        .footer-logo {
+            margin-right: 20px;
+        }
+        .footer-logo img {
+            width: 200px;
+            height: auto;
+        }
+        .footer-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-menu li {
+            font-family: Arial, sans-serif;
+            display:list-item;
+            margin-right: 20px;
+            padding: 5% 0; 
+        }
+
+        .footer-menu a {
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            color: rgb(245, 244, 244);
+            font-weight:lighter;
+        }
+
+        .footer-details {
+            text-align: left;
+        }
+        .footer-details p {
+            font-family: Arial, sans-serif;
+            margin: 5px 0;
+        }
+        .footer-details a {
+            font-family: Arial, sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+        .footer-details a:hover {
+            text-decoration: underline;
+        }
+
+/* Background section */
+.background-section {
+    
+   
+    text-align: center;
+}
+
+.background-container {
+    background: url('header.webp');
+    
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.background-container h1 {
+    font-family: 'Verdana', sans-serif;
+    color: #2a6e54;
+    margin-bottom: 1rem;
+}
+
+.background-container p {
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+}
+
+
+/* Card styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    background: #d7e3fc;
+    border: 1px solid #ccc;
+    margin: 1rem;
+    padding: 1rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    flex: 1;
+}
+
+.card-content h2 {
+    color: #2a6e54;
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom: 0;
+}
+
+.card-content h2 a {
+     color: #2a6e54; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.card-content h2 a:hover {
+    color: #1ed04a;
+}
+
+     
+    </style>
+    <title>Education</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="SHE HEADER.png" alt="Header Image" class="header-image">
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="guestHomePage.html">HOME</a>
+            <a href="membership.html">BECOME A MEMBER</a>
+            <a href="guestAbout.html">ABOUT US</a>
+            <a href="guestPackages.php">WHAT WE OFFER</a>
+            <a href="guestFaqs.html">FAQS</a>
+            <a href="guestContact.html" class="active">CONTACT</a>
+            <a href="guestDonate.html">DONATE</a>
+            <a href="guestReviews.html">REVIEWS</a>
+            <a href="guestEducation.html">EDUCATION</a>
+            <a href="login.php">LOGIN</a>
+        </div>
+    </nav>
+    </header>
+
+    <div class="background-section">
+        <div class="background-container">
+            <h1>Education is Empowerment</h1>
+            <p>Understanding how your body works and maintaining balance is essential to women's health. By exploring topics such as nutrition, sport, mental health, immune system health, and the menstrual cycle, you can uncover the root causes of health issues and find solutions. The links below will guide you in your health discovery process, offering valuable insights into these key areas. Empower yourself with knowledge to improve your well-being and achieve optimal health.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <img src="nutrition.jpg" alt="Nutrition">
+            <div class="card-content">
+                <h2><a href="guestNutrition.html">A complete Guide on How to Eat Healthy and Balanced Diet</a></h2>
+                <p>Learn about balanced diets, essential nutrients, and healthy eating habits.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="sports.jpg" alt="Sport">
+            <div class="card-content">
+                <h2><a href="guestSports.html">A complete guide to Staying Fit</a></h2>
+                <p>Discover exercise routines, physical activity tips, and their benefits.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="menstrual.png" alt="Menstrual Cycle">
+            <div class="card-content">
+                <h2><a href="guestMenstrualCycle.html">Understanding Your Menstrual Cycle</a></h2>
+                <p>Understand the phases of the menstrual cycle and how to manage symptoms.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="mental.jpg" alt="Mental Health">
+            <div class="card-content">
+                <h2><a href="guestMentalHealth.html">How to Maintain Mental Health: Tips and Strategies</a></h2>
+                <p>Explore resources for stress management, mental well-being, and emotional health.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="immune.png" alt="Immune System">
+            <div class="card-content">
+                <h2><a href="guestImmune.html">How to Strengthen Your Immune System?</a></h2>
+                <p>Get information on boosting your immunity.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-menu">
+                    <ul>
+                        <li><strong><u>Menu</u></strong></li>
+                        <li><a href="guestHomePage.html">Home</a></li>
+                        <li><a href="guestAbout.html">About Us</a></li>
+                        <li><a href="guestPackages.php">Packages</a></li>
+                        <li><a href="guestContact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="footer-logo">
+                    <img src="footerLogo.png" alt="Logo">
+                </div>
+                <div class="footer-details">
+                    <p><strong><u>Get In Touch</u></strong></p>
+                    <p>Level 2, The Five @KPD</p>
+                    <p>JALAN DUNGUN</p>
+                    <p>DAMANSARA HEIGHTS</p>
+                    <p><a href="mailto:INFO@shewellnessclub">INFO@shewellnessclub</a></p>
+                    <p><a href="tel:+0123456789">+0123456789</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
